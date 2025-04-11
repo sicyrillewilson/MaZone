@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bleu">#2196F3</color>
+
+    <color name="c1" hex="1b31c1" r="27" g="49" b="193">#1B31C1</color>
+    <color name="c2" hex="d1c6f0" r="209" g="198" b="240">#D1C6F0</color>
+    <color name="C3" hex="d1c6f0" r="209" g="198" b="240">#8ac4ff</color>
+    <color name="C4" hex="d1c6f0" r="209" g="198" b="240">#053b5b</color>
+    <color name="C5" hex="d1c6f0" r="209" g="198" b="240">#b3bbbb</color>
+</resources>

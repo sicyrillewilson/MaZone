@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permission pour effectuer des appels téléphoniques -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- Déclaration de la fonctionnalité matérielle de téléphonie -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <!-- Permission pour pouvoir récupérer le nom de l'opérateur mobile et agir en conséquence -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Permission d'accès à internet pour pouvoir faire les gets et tout le reste vers Antamedia -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Autorisation pour lire les messages de transaction réussi -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/wifi_zone"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/wifi_zone"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaZone"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".ui.SmsReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

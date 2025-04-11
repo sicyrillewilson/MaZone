@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_actifs"
+        android:icon="@drawable/icon_actif"
+        android:title="Actifs"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+    <item
+        android:id="@+id/nav_accueil"
+        android:icon="@drawable/icon_accueil"
+        android:title="Accueil"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+    <item
+        android:id="@+id/nav_tickets"
+        android:icon="@drawable/icon_ticket"
+        android:title="Tickets"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+</menu>
